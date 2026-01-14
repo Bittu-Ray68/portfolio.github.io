@@ -1,0 +1,126 @@
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #header-box {
+        background-color: darkslateblue;
+        padding: 0;
+        height: 10vh;
+        border: none;
+        box-shadow: 0px 3px 10px pink, 0px 3px 10px rgb(32, 47, 178);
+
+        & .icon-box {
+
+            & img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        & .navigation-menu {
+            width: 80vw;
+            position: absolute;
+            top: 0vh;
+            right: 0;
+            background-color: rgb(48, 14, 107);
+            display: none;
+            row-gap: 10px;
+            height: 80vh;
+            text-align: center;
+            padding: 30px 0px 0px 0px;
+            border-bottom-left-radius: 10px;
+            margin: 0;
+            & a {
+                align-content: center;
+                margin: 0;
+                font-size: 1.8em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+            & a:hover {
+                background-color: darkslateblue;
+                border: none;
+                color: white;
+            }
+            & span {
+                align-content: center;
+                justify-self: flex-end;
+                margin-right: 15%;
+                display: block;
+                color: white;
+                font-size: 3em;
+            }
+
+        }
+
+        & .click-bar {
+            display: flex;
+            margin: 0px 40px;
+
+            & i {
+                font-size: 1.5em;
+                color: #ffffff;
+                transition: transform 1s;
+            }
+
+        
+        }
+    }
+
+    #intro-box {
+        display: grid;
+        margin: 0;
+
+        & .content-box {
+            width: auto;
+            margin: 0;
+            line-height: 60px;
+            background-color: darkslateblue;
+            padding: 10px 20px;
+            border: none;
+            box-shadow: 0px 10px 2px rgb(111, 3, 212), 0px 10px 5px pink;
+
+
+            & p {
+                font-size: 2.3em;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 0;
+                color: #ffffff;
+            }
+
+            & .span-el {
+                font-size: 1.5em;
+                color: white;
+                
+            }
+
+            & button {
+                margin: 5px;
+                margin: 20px 0px;
+            }
+            .social-media {
+               
+                & span {
+                    color: white;
+                    margin: 30px 40px 0px 0px;
+                }
+            }
+        }
+
+        & .image-box {
+            width: auto;
+            align-content: center;
+            padding: 30px 0px;
+            margin: 0;
+
+            & img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+}
