@@ -29,13 +29,14 @@
     display: flex;
     margin: 0px 30px;
     column-gap: 40px;
+
     & a {
         color: #ffffff;
         font-size: 1.3em;
         font-family: 'Courier New', Courier, monospace;
         text-decoration: none;
         padding: 5px 10px;
-        
+
     }
 
     & a:hover {
@@ -102,8 +103,10 @@
                 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             }
         }
+
         & .social-media {
-             display: flex;
+            display: flex;
+
             & span {
                 margin: 10px 60px 0px 0px;
                 font-size: 1.4em;
@@ -128,21 +131,111 @@
 }
 
 #about-box {
-    padding: 7px 25px;
-    text-align: center;
+    background-color: blueviolet;
+    padding: 20px 0px;
 
-    & h2 {
-        color: cadetblue;
-        font-size: 1.4em;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        display: inline;
-        border-bottom: 2px solid blueviolet;
+    & .about-heading {
+        text-align: center;
+        padding: 5px 0px;
+
+        & h2 {
+            font-size: 2em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            display: inline;
+            transition-property: border-width;
+            transition-delay: 0s;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+            padding-bottom: 6px;
+        }
+
+        & h2:hover {
+            border-bottom: 3px solid white;
+        }
     }
 
-    & p {
-        color: gray;
-        font-size: 0.6rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        word-wrap: break-word;
+    & .about-data {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 25px 10px;
+
+        & .intro,.education {
+            width: 600px;
+            height: auto;
+            padding: 20px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+
+        & .intro {
+            
+            & div {
+                padding: 10px 12px;
+            }
+            & h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: blueviolet;
+                display: inline;
+                padding: 5px 8px;
+                border: none;
+                border-radius: 10px;
+
+            }
+            & h3:hover {
+                opacity: 0.85;
+            }
+            /* & .detail {
+                margin: 15px 20px;
+                row-gap: 30px;
+               
+                & img {
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    top: 10%;
+                    left: 60%;
+                }
+               & p {
+                font-size: 1.1em;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                margin: 10px 0px;
+                color: gray;
+               }
+                & label {
+                    font-size: 1.5em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    margin: 25px 0px;
+                    color: blueviolet;
+                }
+               & span {
+                  font-size: 1em; 
+                  font-family: 'Courier New', Courier, monospace;margin: 5px 0px;
+               }
+            } */
+        }
+
+        & .education {
+
+            & h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.2em;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: blueviolet;
+                display: inline;
+                padding: 5px 8px;
+                border: none;
+                border-radius: 10px;
+            }
+            & h3:hover {
+                opacity: 0.85;
+            }
+        }
     }
 }
