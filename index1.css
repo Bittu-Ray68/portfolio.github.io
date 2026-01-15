@@ -1,241 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #header-box {
-    height: 10vh;
-    background-color: blueviolet;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 3px 8px blueviolet, 0px 3px 8px white, 0px 3px 8px pink;
+  height: 10vh;
+  background-color: blueviolet;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 8px blueviolet, 0px 3px 8px white, 0px 3px 8px pink;
 }
 
 .icon-box {
-    margin: 0px 30px;
+  margin: 0px 30px;
 
-    & img {
-        width: 45px;
-        height: 50px;
-        border: none;
-        border-radius: 100%;
-    }
+  & img {
+    width: 45px;
+    height: 50px;
+    border: none;
+    border-radius: 100%;
+  }
 }
 
 .navigation-menu {
-    display: flex;
-    margin: 0px 30px;
-    column-gap: 40px;
+  display: flex;
+  margin: 0px 30px;
+  column-gap: 40px;
 
-    & a {
-        color: #ffffff;
-        font-size: 1.3em;
-        font-family: 'Courier New', Courier, monospace;
-        text-decoration: none;
-        padding: 5px 10px;
+  & a {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: "Courier New", Courier, monospace;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
 
-    }
+  & a:hover {
+    background-color: white;
+    color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+  }
 
-    & a:hover {
-        background-color: white;
-        color: blueviolet;
-        border: none;
-        border-radius: 10px;
-        font-weight: 800;
-    }
+  & span {
+    display: none;
+  }
 
-    & span {
-        display: none;
-    }
-
-    & a:hover {
-        border-bottom: 1px solid white;
-    }
-
-
+  & a:hover {
+    border-bottom: 1px solid white;
+  }
 }
 
 .click-bar {
-    display: none;
+  display: none;
 }
 
 #intro-box {
-    height: 90vh;
-    display: flex;
-    background-color: lightcyan;
-    margin-top: 6px;
+  height: 90vh;
+  display: flex;
+  background-color: lightcyan;
+  margin-top: 6px;
 
-    & .content-box {
-        width: 50%;
-        align-content: center;
-        line-height: 70px;
-        margin-left: 140px;
+  & .content-box {
+    width: 50%;
+    align-content: center;
+    line-height: 70px;
+    margin-left: 140px;
 
-
-        & p {
-            color: blueviolet;
-            font-size: 4em;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        & span {
-            font-size: 2em;
-            color: darkmagenta;
-            font-family: 'Courier New', Courier, monospace;
-
-        }
-
-        & button {
-            background-color: blueviolet;
-            border: none;
-            border-radius: 7px;
-            padding: 6px 15px;
-
-            & a {
-                color: white;
-                font-size: 1.3em;
-                text-decoration: none;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-        }
-
-        & .social-media {
-            display: flex;
-
-            & span {
-                margin: 10px 60px 0px 0px;
-                font-size: 1.4em;
-            }
-        }
+    & p {
+      color: blueviolet;
+      font-size: 4em;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
 
-    & .image-box {
-        width: 50%;
-        align-content: center;
-        margin-left: 100px;
-        text-align: center;
-
-        & img {
-            width: 350px;
-            height: 350px;
-            border: 2px solid darkcyan;
-            border-radius: 100%;
-
-        }
+    & span {
+      font-size: 2em;
+      color: darkmagenta;
+      font-family: "Courier New", Courier, monospace;
     }
+
+    & button {
+      background-color: blueviolet;
+      border: none;
+      border-radius: 7px;
+      padding: 6px 15px;
+
+      & a {
+        color: white;
+        font-size: 1.3em;
+        text-decoration: none;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    }
+
+    & .social-media {
+      display: flex;
+
+      & span {
+        margin: 10px 60px 0px 0px;
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  & .image-box {
+    width: 50%;
+    align-content: center;
+    margin-left: 100px;
+    text-align: center;
+
+    & img {
+      width: 350px;
+      height: 350px;
+      border: 2px solid darkcyan;
+      border-radius: 100%;
+    }
+  }
 }
 
 #about-box {
-    background-color: blueviolet;
-    padding: 20px 0px;
+  background-color: blueviolet;
+  padding: 20px 0px;
 
-    & .about-heading {
-        text-align: center;
-        padding: 5px 0px;
+  & .about-heading {
+    text-align: center;
+    padding: 5px 0px;
 
-        & h2 {
-            font-size: 2em;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color: white;
-            display: inline;
-            transition-property: border-width;
-            transition-delay: 0s;
-            transition-duration: 0.2s;
-            transition-timing-function: ease-in-out;
-            padding-bottom: 6px;
-        }
-
-        & h2:hover {
-            border-bottom: 3px solid white;
-        }
+    & h2 {
+      font-size: 2em;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      color: white;
+      display: inline;
+      transition-property: border-width;
+      transition-delay: 0s;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
+      padding-bottom: 6px;
     }
 
-    & .about-data {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 25px 10px;
-
-        & .intro,.education {
-            width: 600px;
-            height: auto;
-            padding: 20px;
-            background-color: white;
-            border: none;
-            border-radius: 10px;
-        }
-
-        & .intro {
-            
-            & div {
-                padding: 10px 12px;
-            }
-            & h3 {
-                color: white;
-                text-transform: uppercase;
-                font-size: 1.2em;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: blueviolet;
-                display: inline;
-                padding: 5px 8px;
-                border: none;
-                border-radius: 10px;
-
-            }
-            & h3:hover {
-                opacity: 0.85;
-            }
-            /* & .detail {
-                margin: 15px 20px;
-                row-gap: 30px;
-               
-                & img {
-                    width: 100px;
-                    height: 100px;
-                    position: relative;
-                    top: 10%;
-                    left: 60%;
-                }
-               & p {
-                font-size: 1.1em;
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                margin: 10px 0px;
-                color: gray;
-               }
-                & label {
-                    font-size: 1.5em;
-                    font-family: Arial, Helvetica, sans-serif;
-                    margin: 25px 0px;
-                    color: blueviolet;
-                }
-               & span {
-                  font-size: 1em; 
-                  font-family: 'Courier New', Courier, monospace;margin: 5px 0px;
-               }
-            } */
-        }
-
-        & .education {
-
-            & h3 {
-                color: white;
-                text-transform: uppercase;
-                font-size: 1.2em;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background-color: blueviolet;
-                display: inline;
-                padding: 5px 8px;
-                border: none;
-                border-radius: 10px;
-            }
-            & h3:hover {
-                opacity: 0.85;
-            }
-        }
+    & h2:hover {
+      border-bottom: 3px solid white;
     }
-}
+  }
+
+  & .about-data {
+    padding: 25px 10px;
+    width: auto;
+    background-color: white;
+    margin: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 30px;
+    
+    & p {
+        color: gray;
+        font-size: 1.1em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 10px;
+        word-break: break-all;
+        word-wrap: break-word;
+        line-height: 30px;
+    }
+    }
+  }
+
+
