@@ -118,6 +118,8 @@
   }
   #about-box {
     & .about-data {
+      height: 70vh;
+      overflow: scroll;
       background-color: white;
       padding: 20px 10px;
       margin: 20px 30px;
@@ -127,7 +129,8 @@
       & p {
         color: gray;
         font-size: 1em;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         margin: 10px;
         word-break: break-all;
         word-wrap: break-word;
