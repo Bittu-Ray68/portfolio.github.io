@@ -143,12 +143,12 @@
     & .edu-detail {
       display: grid;
       grid-template-columns: none;
-      padding: 0;
+      padding: 5px;
       justify-content: center;
       align-items: center;
 
       & .mca,.bca,.inter,.matric {
-
+               padding: 10px;
         & .result {
           display: grid;
           align-content: center;
