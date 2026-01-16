@@ -139,7 +139,7 @@
     }
   }
   #education {
-   
+   padding: 8px;
     & .edu-detail {
       display: grid;
       grid-template-columns: none;
