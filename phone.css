@@ -138,4 +138,37 @@
       }
     }
   }
+  #education {
+   
+    & .edu-detail {
+      display: grid;
+      grid-template-columns: none;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+
+      & .mca,.bca,.inter,.matric {
+
+        & .result {
+          display: grid;
+          align-content: center;
+          row-gap: 30px;
+
+          & .subject {
+            border-radius: 10px;
+            font-size: 1.1em;
+          }
+          & .per {
+            border-radius: 10px;
+          }
+          & .running {
+          border-radius: 10px;
+        }
+        }
+        
+      }
+    }
+    
+
+  }
 }
