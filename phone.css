@@ -138,8 +138,12 @@
       }
     }
   }
+  #about-box {
+    background-color: rgb(74, 57, 182);
+  }
   #education {
     padding: 8px;
+    background-color: rgb(74, 57, 182);
     & .edu-detail {
       display: grid;
       grid-template-columns: none;
