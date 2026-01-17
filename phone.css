@@ -143,7 +143,7 @@
     & .edu-detail {
       display: grid;
       grid-template-columns: none;
-      padding: 10px;
+      padding: 15px;
       justify-content: center;
       align-items: center;
 
@@ -153,11 +153,30 @@
       .matric {
         padding: 10px;
         margin: 10px 0px;
-        
+
         & .heading {
           padding: 5px;
           & h3 {
-            font-size: 1.5em;
+            font-size: 1.2em;
+          }
+        }
+        & .sub-heading {
+          & .image {
+            width: 40px;
+            height: 40px;
+          }
+          & p {
+            font-size: 1.1em;
+          }
+        }
+        & .college-session {
+          line-height: 25px;
+          & p {
+            font-size: 1.1em;
+            margin: 10px 0px;
+          }
+          & span {
+            margin: 10px 0px;
           }
         }
         & .result {
@@ -167,13 +186,17 @@
 
           & .subject {
             border-radius: 10px;
-            font-size: 1.1em;
+            font-size: 1em;
           }
           & .per {
             border-radius: 10px;
+            font-size: 1em;
+            text-align: center;
           }
           & .running {
             border-radius: 10px;
+            font-size: 1em;
+            text-align: center;
           }
         }
       }
