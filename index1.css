@@ -12,13 +12,15 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 3px 8px blueviolet, 0px 3px 8px white, 0px 3px 8px pink;
+  position: sticky;
+  top: 0;
 }
 
 .icon-box {
   margin: 0px 30px;
 
   & img {
-    width: 45px;
+    width: 50px;
     height: 50px;
     border: none;
     border-radius: 100%;
@@ -211,11 +213,12 @@
     .matric {
       width: auto;
       height: auto;
-      background-color: white;
+      background-color: indigo;
       padding: 30px 30px;
       margin: 30px 20px;
       border-radius: 10px;
       align-items: center;
+      box-shadow: 3px 3px 10px white,-3px -3px 10px whitesmoke;
 
       & .heading {
         display: flex;
@@ -223,7 +226,7 @@
         justify-content: flex-start;
         column-gap: 10px;
         & h3 {
-          color: blueviolet;
+          color: white;
           font-size: 1.7em;
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
             sans-serif;
@@ -264,8 +267,8 @@
           border-radius: 100%;
         }
         & p {
-          color: blueviolet;
-          opacity: 0.8;
+          color: white;
+          opacity: 0.9;
           font-size: 1.4em;
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
             "Lucida Sans", Arial, sans-serif;
@@ -280,7 +283,7 @@
         & p {
           font-size: 1.3em;
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          color: blueviolet;
+          color: rgba(255, 255, 255, 0.861);
           font-weight: 800;
           
         }
@@ -288,21 +291,22 @@
           font-size: 1.2em;
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           font-family: 600;
-          color: rgb(113, 107, 107);
+          color: rgb(198, 191, 191);
         }
       }
       .result {
         display: flex;
-        padding: 20px 15px;
+        /* padding: 20px 15px; */
         justify-content: space-between;
         align-items: center;
 
         & .subject {
-          font-size: 1.3em;
+          font-size: 1.2em;
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           color: white;
           border: none;
-          padding: 6px 15px;
+          padding: 10px 15px;
+          text-align: center;
           border-radius: 30px;
           background-color: blueviolet;
 
@@ -315,6 +319,7 @@
           border-radius: 30px;
           color: white;
           background-color: green;
+          text-align: center;
 
           & span {
             background-color: green;

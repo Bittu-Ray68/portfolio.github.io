@@ -1,88 +1,196 @@
-@media screen and (min-width:600px) and (max-width:1024px) {
-    * {
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #header-box {
+    width: auto;
+    height: 8vh;
+    margin: 0;
+    padding: 0px 15px;
+    background-color: #654ea3;
+    box-shadow: 0px 5px 10px white;
+
+    & .icon-box {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    & .navigation-menu {
+      margin: 0;
+      column-gap: 30px;
+
+      & a {
         margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        padding: 0px 0px 3px 0px;
+        font-size: 1.3em;
+      }
+
+      & a:hover {
+        background-color: transparent;
+        color: white;
+        /* border: none; */
+        border-bottom: 2px solid white;
+        border-radius: 0;
+      }
+    }
+  }
+
+  #intro-box {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    background-image: linear-gradient(to right top, #654ea3, #eaafc8);
+
+    & .content-box {
+      width: auto;
+      padding: 30px 50px;
+      margin: 0;
+
+      & p,
+      span,
+      div span {
+        color: white;
+      }
+
+      & button {
+        font-size: 1.2em;
+      }
+
+      & .social-media {
+        padding: 8px 30px;
+
+        & span:hover {
+          opacity: 0.8;
+        }
+      }
     }
 
-    #header-box {
-        width: auto;
-        height: 8vh;
-        margin: 0;
-        padding: 0px 3px;
-        background-color: #654ea3;
-        box-shadow: 0px 10px 10px white, 0px 105px 10px yellow;
-
-        & .icon-box {
-
-            img{
-                width: 60px;
-                height: 60px;
-            }
-        }
-        & .navigation-menu {
-            margin: 0;
-            column-gap: 22px;
-
-            & a {
-                margin: 0;
-                padding: 0px 0px 3px 0px;
-                font-size: 1.3em;
-            }
-
-            & a:hover {
-                background-color: transparent;
-                color: white;
-                /* border: none; */
-                border-bottom: 2px solid white;
-                border-radius: 0;
-
-            }
-        }
-
+    & .image-box {
+      width: auto;
+      margin: 0;
+      text-align: center;
+      padding: 10px 30px;
     }
+  }
+  #education {
+    padding: 10px;
 
-    #intro-box {
-        height: auto;
-        margin: 0;
-        padding: 0;
+    & .edu-detail {
         display: grid;
-        align-items: center;
-        background-image: linear-gradient(to right top, #654ea3, #eaafc8);
+        grid-template-columns: none;
 
-        & .content-box {
-            width: auto;
-            padding: 30px 50px;
-            margin: 0;
-
-            & p,
-            span,
-            div span {
-                color: white;
-            }
-
-            & button {
-                font-size: 1.2em;
-            }
-
-            & .social-media {
-                padding: 8px 30px;
-
-                & span:hover {
-                     opacity: 0.8;
-                }
-            }
-
-        }
-
-        & .image-box {
-            width: auto;
-            margin: 0;
-            text-align: center;
-            padding: 10px 30px;
-
-
-
+        & .result {
+            padding: 5px 10px;
         }
     }
+
+  }
 }
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #header-box {
+    width: auto;
+    height: 8vh;
+    margin: 0;
+    padding: 0px 5px;
+    background-color: #654ea3;
+    box-shadow: 0px 5px 10px white;
+
+    & .icon-box {
+      img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+    & .navigation-menu {
+      margin: 0;
+      column-gap: 30px;
+
+      & a {
+        margin: 0;
+        padding: 0px 0px 3px 0px;
+        font-size: 1.3em;
+      }
+
+      & a:hover {
+        background-color: transparent;
+        color: white;
+        /* border: none; */
+        border-bottom: 2px solid white;
+        border-radius: 0;
+      }
+    }
+  }
+
+  #intro-box {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    background-image: linear-gradient(to right top, #654ea3, #eaafc8);
+
+    & .content-box {
+      width: auto;
+      padding: 30px 50px;
+      margin: 0;
+
+      & p,
+      span,
+      div span {
+        color: white;
+      }
+
+      & button {
+        font-size: 1.2em;
+      }
+
+      & .social-media {
+        padding: 8px 30px;
+
+        & span:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    & .image-box {
+      width: auto;
+      margin: 0;
+      text-align: center;
+      padding: 10px 30px;
+    }
+  }
+  #education {
+    padding: 10px;
+
+    & .edu-detail {
+        display: grid;
+        grid-template-columns: none;
+
+        & .result {
+            display: grid;
+            align-items: center;
+            padding: 0;
+
+            & .subject , .per {
+                text-align: center;
+            }
+        }
+    }
+
+  }
+}
+
