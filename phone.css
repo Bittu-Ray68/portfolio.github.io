@@ -157,7 +157,8 @@
       .matric {
         padding: 10px;
         margin: 20px 0px;
-
+        background-color: rgb(74, 57, 182);
+        box-shadow: 2px 2px 10px white,-2px -2px 10px whitesmoke;
         & .heading {
           padding: 5px;
           & h3 {
