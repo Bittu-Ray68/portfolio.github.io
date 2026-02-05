@@ -144,6 +144,7 @@
   #education {
     padding: 8px;
     background-color: rgb(74, 57, 182);
+    border: none;
     & .edu-detail {
       display: grid;
       grid-template-columns: none;
@@ -204,6 +205,29 @@
             font-size: 1em;
             text-align: center;
           }
+        }
+      }
+    }
+  }
+  #skills {
+    
+    & .skill-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 10px;
+      padding: 10px;
+
+      & .data {
+        width: 100px;
+        height: 100px;
+        margin: 10px 0px;
+        border-radius: 12px;
+        justify-self: center;
+
+        & img {
+          width: 40px;
+          height: 40px;
+          justify-self: center;
         }
       }
     }

@@ -91,6 +91,19 @@
     }
 
   }
+  #skills {
+    & .skill-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 10px;
+      padding: 10px;
+
+      & .data {
+        margin: 20px 10px;
+        justify-self: center;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px) {
@@ -189,6 +202,18 @@
                 text-align: center;
             }
         }
+    }
+
+  }
+  #skills {
+    & .skill-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      & .data{
+        justify-self: center;
+        margin: 15px 0px;
+      }
     }
 
   }
