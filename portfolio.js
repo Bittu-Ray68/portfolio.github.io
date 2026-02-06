@@ -1,3 +1,4 @@
+
 const spanEl = document.querySelector(".span-el");
 const position_coll = ["Frontend Developer","FullStack Developer","Backend Developer","UI/UX Designer"];
 let POS_Index = 0;
@@ -47,3 +48,54 @@ console.log(mark1);
 bca_mark.innerHTML = Math.floor(mark1 * 100)/100 + "%";
 inter_mark.innerText = Math.round(mark2 * 100)/100 + "%";
 matric_mark.textContent = Math.ceil(mark3 * 100)/100 + "%";
+
+// popup
+let prjt = document.querySelector(".prjt");
+let no_ready = document.querySelector("#not-ready");
+let po_close = document.querySelector(".pop-close");
+prjt.addEventListener("click",() => {
+    if(no_ready.style.display === "none"){
+        no_ready.style.display = "grid";
+    }
+    else {
+        no_ready.style.display = "none";
+    }
+});
+
+po_close.addEventListener("click",() => {
+    if(no_ready.style.display === "grid"){
+        no_ready.style.display = "none";
+    }
+});
+
+// visitors
+
+let submit_btn = document.querySelector(".submit_details");
+
+submit_btn.addEventListener("click",() => {
+    let fname = document.querySelector("#fname").value;
+    let lname = document.querySelector("#lname").value;
+    let email = document.querySelector("#email").value;
+    let phone = document.querySelector("#phone").value;
+    console.log(fname,lname,email,phone);
+    let name = fname + " " + lname;
+
+    const visitor = {
+        "name" : name,
+        "email" : email,
+        "phone" : phone,
+        "visitTime" : new Date().toLocaleString()
+    };
+
+    localStorage.setItem("Visitor Details",JSON.stringify(visitor));
+
+});
+
+let data = localStorage.getItem("visitor Details");
+if(data) {
+    const visitor = JSON.parse(data);
+    console.log(visitor.name);
+    console.log(visitor.email);
+    console.log(visitor.phone);
+    console.log(visitor.visitTime);
+}

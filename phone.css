@@ -102,6 +102,7 @@
         & span {
           color: white;
           margin: 30px 40px 0px 0px;
+          font-size: 1.4em;
         }
       }
     }
@@ -260,12 +261,18 @@
 
             & input {
               width: auto;
-              padding: 8px 5px;
+              padding: 8px 8px;
               background-color: rgb(74, 57, 182);
             }
           }
         }
       }
     }
+  }
+  #not-ready {
+    top: 30%;
+    left: 0px;
+    width: auto;
+    height: 300px;
   }
 }

@@ -29,8 +29,8 @@
           <a href="#intro-box" target="_self">Home</a>
           <a href="#about-box">About</a>
           <a href="#skills">Skills</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#" class="prjt">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="click-bar">
           <i class="bi bi-list"></i>
@@ -45,10 +45,11 @@
             <span class="span-el"></span><br />
             <button><a href="#">Resume</a></button>
             <div class="social-media">
-              <span class="bi bi-instagram"><a href="#"></a></span>
-              <span class="bi bi-linkedin"><a href="#"></a></span>
-              <span class="bi bi-facebook"><a href="#"></a></span>
-              <span class="bi bi-github"></span>
+              <a href="#"><span class="bi bi-instagram"></span></a>
+              <a href="#"><span class="bi bi-linkedin"></span></a>
+              <a href="#"><span class="bi bi-facebook"></span></a>
+              <a href="https://bittu-ray68.github.io/portfolio.github.io/"><span class="bi bi-github"></span></a>
+              
             </div>
           </div>
           <div class="image-box">
@@ -201,36 +202,43 @@
           <div class="cont-box">
             <form action="">
               <div>
-                <label for="">First Name</label><br>
+                <label for="fname">First Name</label><br />
                 <p>
                   <i class="bi bi-person-lines-fill"></i>
-                  <input type="text" placeholder="John"/>
+                  <input type="text" id="fname" autocomplete="off" placeholder="John" />
                 </p>
               </div>
               <div>
-                <label for="">Last name</label><br>
+                <label for="lname">Last name</label><br />
                 <p>
                   <i class="bi bi-person-lines-fill"></i>
-                  <input type="text" placeholder="Doe">
+                  <input type="text" id="lname" autocomplete="off" placeholder="Doe" />
                 </p>
               </div>
               <div>
-                <label for="">Email</label><br>
+                <label for="email">Email</label><br />
                 <p>
                   <i class="bi bi-envelope"></i>
-                  <input type="email" placeholder="abc@gmail.com">
+                  <input type="email" id="email" autocomplete="off" placeholder="abc@gmail.com" />
                 </p>
               </div>
               <div>
-                <label for="">Phone</label><br>
+                <label for="phone">Phone</label><br />
                 <p>
                   <i class="bi bi-telephone"></i>
-                  <input type="tel" pattern="[0-9]{10}" placeholder="1234567890">
+                  <input
+                    type="tel"
+                    id = "phone"
+                    pattern="[0-9]{10}"
+                    required
+                    placeholder="1234567890"
+                    autocomplete="off"
+                  />
                 </p>
               </div>
               <div>
-                <input type="submit" class="sub-res" value="Submit">
-                <input type="reset" class="sub-res" value="Clear">
+                <input type="submit" class="sub-res submit_details" value="Submit" />
+                <input type="reset" class="sub-res clear" value="Clear" />
               </div>
             </form>
           </div>
@@ -240,6 +248,17 @@
         </div>
       </section>
     </main>
+    <div id="not-ready">
+      <p>Projects Under Development</p>
+      <span>
+         I am currently focused on strengthening my
+        development skills by building practical, real-world applications.
+        Rather than publishing incomplete or experimental work, I am dedicating
+        time to creating well-structured, meaningful projects that reflect both
+        technical understanding and clean implementation.
+      </span>
+      <button class="pop-close">Close</button>
+    </div>
     <script src="portfolio.js"></script>
   </body>
 </html>
