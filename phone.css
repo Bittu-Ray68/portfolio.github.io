@@ -232,4 +232,31 @@
       }
     }
   }
+  #contact {
+    background-color: rgb(74, 57, 182);
+    & .cont-heading {
+         text-align: center;
+    }
+    & .cont-box {
+      
+      & form {
+        padding: 7px;
+        display: grid;
+        grid-template-columns: none;
+
+        & div {
+
+          & p {
+            padding: 2px;
+            width: 100%;
+
+            & input {
+              background-color: rgb(74, 57, 182);
+            }
+          }
+        }
+      }
+      
+    }
+  }
 }

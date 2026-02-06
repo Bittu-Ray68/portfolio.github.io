@@ -217,5 +217,28 @@
     }
 
   }
+  #contact {
+
+    & .cont-heading {
+       text-align: center;
+    }
+    & .cont-box {
+
+      & form {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: none;
+
+        & p {
+          width: 100%;
+
+          & input {
+            padding: 5px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
 }
 
