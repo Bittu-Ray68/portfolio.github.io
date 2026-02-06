@@ -245,6 +245,8 @@
       }
     }
     & .cont-box {
+      margin: 5px;
+      padding: 5px;
       & form {
         padding: 7px;
         display: grid;
@@ -254,7 +256,7 @@
           line-height: 45px;
           & p {
             padding: 2px;
-            width: 70vw;
+            width: 60vw;
 
             & input {
               width: auto;
